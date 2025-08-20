@@ -23,15 +23,16 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="text-center">
+			<section className="flex flex-col text-center justify-content items-center">
 				<h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
 					Current & Fun Projects!
 				</h1>
 				<section id="projects">
 					<Project 
 						Name="Plate Scout"
-						Description="Plate Scout is a license plate tracker and your goal is to find all 50 states!"
+						Description="Plate Scout is a license plate tracker and your goal is to find all 50 states! Perfect for family time during road trips or just a fun challenge between friends"
 						Frameworks={["Swift", "SwiftUI"]}
+						Icon="Caravan"
 					/>
 				</section>
 			</section>
