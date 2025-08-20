@@ -1,3 +1,5 @@
+import { Caravan } from "lucide-react";
+
 interface ProjectProps {
     Name: string;
     Description: string;
@@ -22,10 +24,13 @@ export default function Project({Name, Description, Frameworks, Icon}: ProjectPr
         }
     }
 
-    
+    if (Icon === "Caravan") {
+        IconContent = <Caravan className="text-white w-8 h-8 mb-2 stroke-1.25" />
+    }
 
     return (
-        <div className="h-auto bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+        <div className="h-auto lg:w-150 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
+            {IconContent}
             <h1 className="text-xl font-bold text-white text-left mb-5">
                 {Name}
             </h1>
