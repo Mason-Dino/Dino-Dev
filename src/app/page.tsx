@@ -13,7 +13,7 @@ export default function Home() {
 					</h3>
 				</div>
 				<div className='flex flex-col sm:flex-row gap-4 justify-center'>
-					<button className="rounded-2xl bg-gradient-to-r from-purple-400 to-blue-300 hover:from-purple-400 hover:to-purple-400 transition-all transform text-white text-xl font-semibold hover:scale-105 py-3 px-10 flex items-center justify-center">
+					<button className="rounded-2xl bg-gradient-to-r from-purple-400 to-blue-300 hover:from-purple-400 hover:to-purple-400 transition-all transform text-white text-xl font-semibold hover:scale-105 hover:font-bold py-3 px-10 flex items-center justify-center">
 						View My Work <ChevronRight />
 					</button>
 				</div>
