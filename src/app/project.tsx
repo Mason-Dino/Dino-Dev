@@ -5,9 +5,10 @@ interface ProjectProps {
     Description: string;
     Frameworks: string[];
     Icon: string;
+    CallToAction: string[]
 }
 
-export default function Project({Name, Description, Frameworks, Icon}: ProjectProps) {
+export default function Project({Name, Description, Frameworks, Icon, CallToAction}: ProjectProps) {
     var DetailFramework: string[][] = [];
 
     let IconContent;
