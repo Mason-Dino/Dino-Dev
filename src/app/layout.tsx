@@ -31,11 +31,15 @@ export default function RootLayout({
       >
         <div className="Header">
           <div className="Logo">
-            Logo
+            &lt;DinoDev/&gt;
           </div>
           <div className="Apps">  
-            Plate Scout
-            Other Projects
+            <div className="App">
+              Plate Scout
+            </div>
+            <div className="App">
+              Other Projects
+            </div>
           </div>
         </div>
         {children}
