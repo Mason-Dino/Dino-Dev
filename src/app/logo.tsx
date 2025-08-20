@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Logo from '../../public/dinodev.svg'
+import Logo from '../../public/dinodev-background.svg'
 
 interface MainLogoProps {
     width: number;
