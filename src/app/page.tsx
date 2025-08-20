@@ -1,5 +1,7 @@
 import {ChevronRight} from 'lucide-react'; 
 
+import Project from './project';
+
 export default function Home() {
 	return (
 		<div>
@@ -26,7 +28,11 @@ export default function Home() {
 					Current & Fun Projects!
 				</h1>
 				<section id="projects">
-					
+					<Project 
+						Name="Plate Scout"
+						Description="Plate Scout is a license plate tracker and your goal is to find all 50 states!"
+						Frameworks={["Swift", "SwiftUI"]}
+					/>
 				</section>
 			</section>
 		</div>
