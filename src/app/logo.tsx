@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Logo from '../../public/dinodev.svg'
 
 interface MainLogoProps {
-  width: number;
-  height: number;
+    width: number;
+    height: number;
 }
 
 
