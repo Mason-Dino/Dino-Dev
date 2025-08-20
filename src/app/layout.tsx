@@ -13,6 +13,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+				<meta name="theme-color" content="#000000" />
+			</head>
 			<body className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
 				<header className="bg-black/20 backdrop-blur-sm border-b border-white/10">
 					<div className="max-w-full mx-auto px-6 py-4">
