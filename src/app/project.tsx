@@ -5,7 +5,7 @@ interface ProjectProps {
     Description: string;
     Frameworks: string[];
     Icon: string;
-    CallToAction: string[]
+    CallToAction: string[][]
 }
 
 export default function Project({Name, Description, Frameworks, Icon, CallToAction}: ProjectProps) {
@@ -32,8 +32,11 @@ export default function Project({Name, Description, Frameworks, Icon, CallToActi
     return (
         <div className="h-auto lg:w-150 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
             {IconContent}
-            <h1 className="text-xl font-bold text-white text-left mb-5">
+            <h1 className="flex flex-row w-full text-xl font-bold text-white text-left mb-5">
                 {Name}
+                <span className="ml-auto">
+                    Cool
+                </span>
             </h1>
             <p className="text-white text-left mb-5">
                 {Description}
@@ -42,6 +45,14 @@ export default function Project({Name, Description, Frameworks, Icon, CallToActi
                 {DetailFramework.map((item, index) => (
                     <div key={index} className={item[1]}>{item[0]}</div>
                 ))}
+            </div>
+            <div className="flex flex-row gap-3 mt-6">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors flex items-center">
+                    GitHub
+                </button>
+                <button className="border border-white/30 hover:bg-white/10 text-white px-4 py-2 rounded-lg transition-colors">
+                    Download
+                </button>
             </div>
         </div>
     );

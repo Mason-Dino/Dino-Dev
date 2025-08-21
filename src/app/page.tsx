@@ -33,7 +33,7 @@ export default function Home() {
 						Description="Plate Scout is a license plate tracker and your goal is to find all 50 states! Perfect for family time during road trips or just a fun challenge between friends"
 						Frameworks={["Swift", "SwiftUI"]}
 						Icon="Caravan"
-						CallToAction={["Download"]}
+						CallToAction={[["Download", "blue-100"]]}
 					/>
 				</section>
 			</section>
