@@ -1,4 +1,4 @@
-import { Caravan, CodeXml, Download } from "lucide-react";
+import { Caravan, CodeXml, Download, Globe } from "lucide-react";
 
 interface ProjectProps {
     Name: string;
@@ -8,12 +8,14 @@ interface ProjectProps {
 
     code: boolean;
     download: boolean;
+    website: boolean;
 
     codeLink?: string;
     downloadLink?: string;
+    websiteLink?: string;
 }
 
-export default function Project({Name, Description, Frameworks, Icon, code, download, codeLink, downloadLink}: ProjectProps) {
+export default function Project({Name, Description, Frameworks, Icon, code, download, codeLink, downloadLink, website, websiteLink}: ProjectProps) {
     var DetailFramework: string[][] = [];
 
     let IconContent;
@@ -38,8 +40,16 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
         <div className="h-auto lg:w-150 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
             {IconContent}
             <h1 className="flex flex-row items-center w-full text-xl font-bold text-white text-left mb-5">
-                {Name}
+                {website ? 
+                <a href={websiteLink} target="_blank" className="cursor-pointer">
+                    {Name}
+                </a> : Name}
                 <span className="ml-auto flex flex-row gap-2 stoke-1.25">
+                    {website &&
+                    <a href={websiteLink} target="_blank">
+                        <Globe className="h-5 w-5 cursor-pointer"/>
+                    </a>
+                    }
                     {code && 
                     <a href={codeLink} target="_blank">
                         <CodeXml className="h-5 w-5 cursor-pointer"/>
