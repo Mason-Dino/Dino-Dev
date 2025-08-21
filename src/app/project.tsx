@@ -1,4 +1,4 @@
-import { Caravan, CodeXml, Download, Globe } from "lucide-react";
+import { Caravan, FolderGit, CodeXml, Download, Globe } from "lucide-react";
 
 interface ProjectProps {
     Name: string;
@@ -30,10 +30,22 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
         if (Frameworks[i] === "SwiftUI") {
             DetailFramework.push(["SwiftUI", "bg-orange-500/20 text-orange-300 px-3 py-1 rounded-full text-sm w-fit"])
         }
+
+        if (Frameworks[i] === "JavaScript") {
+            DetailFramework.push(["JavaScript", "bg-yellow-500/20 text-yellow-300 px-3 py-1 rounded-full text-sm w-fit"])
+        }
+
+        if (Frameworks[i] === "Electron.js") {
+            DetailFramework.push(["Electron.js", "bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm w-fit"])
+        }
     }
 
     if (Icon === "Caravan") {
         IconContent = <Caravan className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg" />
+    }
+
+    if (Icon === "Folder-Git") {
+        IconContent = <FolderGit className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-violet-500 to-green-500 rounded-lg"/>
     }
 
     return (
