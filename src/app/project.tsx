@@ -5,13 +5,15 @@ interface ProjectProps {
     Description: string;
     Frameworks: string[];
     Icon: string;
-    CallToAction: string[][]
 
-    code: boolean
-    download: boolean
+    code: boolean;
+    download: boolean;
+
+    codeLink?: string;
+    downloadLink?: string;
 }
 
-export default function Project({Name, Description, Frameworks, Icon, CallToAction, code, download}: ProjectProps) {
+export default function Project({Name, Description, Frameworks, Icon, code, download, codeLink, downloadLink}: ProjectProps) {
     var DetailFramework: string[][] = [];
 
     let IconContent;
@@ -38,8 +40,14 @@ export default function Project({Name, Description, Frameworks, Icon, CallToActi
             <h1 className="flex flex-row items-center w-full text-xl font-bold text-white text-left mb-5">
                 {Name}
                 <span className="ml-auto flex flex-row gap-2 stoke-1.25">
-                    {code && <CodeXml className="h-5 w-5 cursor-pointer"/>}
-                    {download && <Download className="h-5 w-5 cursor-pointer"/>}
+                    {code && 
+                    <a href={codeLink} target="_blank">
+                        <CodeXml className="h-5 w-5 cursor-pointer"/>
+                    </a>}
+                    {download && 
+                    <a href={downloadLink} target="_blank">
+                        <Download className="h-5 w-5 cursor-pointer"/>
+                    </a>}
                 </span>
             </h1>
             <p className="text-white text-left mb-5">
