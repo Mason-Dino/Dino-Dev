@@ -53,7 +53,7 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
             {IconContent}
             <h1 className="flex flex-row items-center w-full text-xl font-bold text-white text-left mb-5">
                 {website ? 
-                <a href={websiteLink} target="_blank" className="cursor-pointer">
+                <a href={websiteLink} className="cursor-pointer">
                     {Name}
                 </a> : Name}
                 <span className="ml-auto flex flex-row gap-2 stoke-1.25">
