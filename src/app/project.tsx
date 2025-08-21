@@ -29,7 +29,7 @@ export default function Project({Name, Description, Frameworks, Icon, CallToActi
     }
 
     if (Icon === "Caravan") {
-        IconContent = <Caravan className="text-white w-8 h-8 mb-2 stroke-1.25" />
+        IconContent = <Caravan className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg" />
     }
 
     return (
