@@ -28,6 +28,7 @@ export default function RootLayout({
 				</header>
 				<div className="px-10">
 					{children}
+					<br />
 				</div>
 			</body>
 		</html>
