@@ -37,7 +37,7 @@ export default function Home() {
 						download={true}
 						website={true}
 						downloadLink="https://google.com"
-						websiteLink="https://mason-dino.github.io/"
+						websiteLink="/plate-scout"
 					/>
 					<Project 
 						Name="ProjectByte"
