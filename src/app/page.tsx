@@ -27,7 +27,7 @@ export default function Home() {
 				<h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
 					Current & Fun Projects!
 				</h1>
-				<section id="projects">
+				<section id="projects" className="flex flex-col gap-4">
 					<Project 
 						Name="Plate Scout"
 						Description="Plate Scout is a license plate tracker and your goal is to find all 50 states! Perfect for family time during road trips or just a fun challenge between friends"
@@ -38,6 +38,16 @@ export default function Home() {
 						website={true}
 						downloadLink="https://google.com"
 						websiteLink="https://mason-dino.github.io/"
+					/>
+					<Project 
+						Name="ProjectByte"
+						Description="ProjectByte is application that helps manage projects to help keep a team or person on track to finish! ProjectByte focuses of being customizable for each specific project!"
+						Frameworks={["JavaScript", "Electron.js"]}
+						Icon="Folder-Git"
+						code={true}
+						download={false}
+						website={false}
+						codeLink="https://github.com/Mason-Dino/ProjectByte"
 					/>
 				</section>
 			</section>
