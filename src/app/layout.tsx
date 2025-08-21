@@ -21,9 +21,9 @@ export default function RootLayout({
 			<body className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
 				<header className="bg-black/20 backdrop-blur-sm border-b border-white/10">
 					<div className="max-w-full mx-auto px-6 py-4">
-						<div className="text-2xl font-bold text-white">
+						<a href="/" className="text-2xl font-bold text-white">
 							&lt;DinoDev/&gt;
-						</div>
+						</a>
 					</div>
 				</header>
 				<div className="px-10">
