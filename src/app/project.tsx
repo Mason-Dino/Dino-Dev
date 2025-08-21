@@ -1,4 +1,4 @@
-import { Caravan } from "lucide-react";
+import { Caravan, CodeXml, Download } from "lucide-react";
 
 interface ProjectProps {
     Name: string;
@@ -6,9 +6,12 @@ interface ProjectProps {
     Frameworks: string[];
     Icon: string;
     CallToAction: string[][]
+
+    code: boolean
+    download: boolean
 }
 
-export default function Project({Name, Description, Frameworks, Icon, CallToAction}: ProjectProps) {
+export default function Project({Name, Description, Frameworks, Icon, CallToAction, code, download}: ProjectProps) {
     var DetailFramework: string[][] = [];
 
     let IconContent;
@@ -32,10 +35,11 @@ export default function Project({Name, Description, Frameworks, Icon, CallToActi
     return (
         <div className="h-auto lg:w-150 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
             {IconContent}
-            <h1 className="flex flex-row w-full text-xl font-bold text-white text-left mb-5">
+            <h1 className="flex flex-row items-center w-full text-xl font-bold text-white text-left mb-5">
                 {Name}
-                <span className="ml-auto">
-                    Cool
+                <span className="ml-auto flex flex-row gap-2 stoke-1.25">
+                    {code && <CodeXml className="h-5 w-5 cursor-pointer"/>}
+                    {download && <Download className="h-5 w-5 cursor-pointer"/>}
                 </span>
             </h1>
             <p className="text-white text-left mb-5">
@@ -45,14 +49,6 @@ export default function Project({Name, Description, Frameworks, Icon, CallToActi
                 {DetailFramework.map((item, index) => (
                     <div key={index} className={item[1]}>{item[0]}</div>
                 ))}
-            </div>
-            <div className="flex flex-row gap-3 mt-6">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors flex items-center">
-                    GitHub
-                </button>
-                <button className="border border-white/30 hover:bg-white/10 text-white px-4 py-2 rounded-lg transition-colors">
-                    Download
-                </button>
             </div>
         </div>
     );

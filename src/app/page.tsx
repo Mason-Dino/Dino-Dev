@@ -34,6 +34,8 @@ export default function Home() {
 						Frameworks={["Swift", "SwiftUI"]}
 						Icon="Caravan"
 						CallToAction={[["Download", "blue-100"]]}
+						code={true}
+						download={true}
 					/>
 				</section>
 			</section>
