@@ -23,7 +23,7 @@ export default function Home() {
 							On you next road trip?<br /> Download Plate Scout to have a little family fun or some competition! 
 						</h3>
 					</div>
-					<div className='flex flex-col sm:flex-row gap-4 justify-center'>
+					<div className='flex flex-row gap-4 justify-center'>
                         <a>
                             <button className="rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
                                 Download <ChevronRight />
