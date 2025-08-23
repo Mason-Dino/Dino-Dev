@@ -36,7 +36,11 @@ export default function Home() {
                 <h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
                     What is Plate Scout?
                 </h1>
+				<Image src={homeScreen} alt="a map of all 50 states in plate scout" />
 				<Image src={allStates} alt="a map of all 50 states in plate scout" />
+				<Image src={empty} alt="a map of all 50 states in plate scout" />
+				<Image src={mapSemi} alt="a map of all 50 states in plate scout" />
+				<Image src={profile} alt="a map of all 50 states in plate scout" />
             </section>
 		</div>
 	);
