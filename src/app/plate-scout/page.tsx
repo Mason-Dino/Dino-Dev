@@ -37,19 +37,22 @@ export default function Home() {
                     What is Plate Scout?
                 </h1>
 				<div className='w-full flex flex-col gap-10'>
-					<p className='text-red-100 sm:text-blue-400 md:text-green-400 xs:text-yellow-500'>This is some text</p>
-					<div className='flex items-center w-full justify-between'>
+					<div className='flex items-center w-full justify-around'>
 						<Image src={homeScreen} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
 						<Image src={profile} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
-						<div className=''>
-							<h3>Home Screen</h3>
-							<p>This is the main screen of Plate Scout and where you are going to be able to access all of your trips and even make new ones. This is the screen that you can go to if you need to access your profile, you can also access that on trip screen, this is the most important screen in the app. </p>
-						</div>
+					</div>
+					<div className='text-white'>
+						<h3>Home/Profile Screen</h3>
+						<p>These two screens will be the 2nd most used screens. The Home Screen allows you to change trips, make trips, and even delete trips! On the profile screen you will see your points you have within Plate Scout</p>
 					</div>
 					<div className='flex items-center w-full justify-between'>
 						<Image src={allStates} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
 						<Image src={empty} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
 						<Image src={mapSemi} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
+					</div>
+					<div className='text-white'>
+						<h3>Trip Screen</h3>
+						<p>This is the most important screen in Plate Scout as this is the screen you will actually add different states on each of your different trips you have!</p>
 					</div>
 				</div>
             </section>
