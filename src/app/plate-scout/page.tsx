@@ -36,11 +36,22 @@ export default function Home() {
                 <h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
                     What is Plate Scout?
                 </h1>
-				<Image src={homeScreen} alt="a map of all 50 states in plate scout" />
-				<Image src={allStates} alt="a map of all 50 states in plate scout" />
-				<Image src={empty} alt="a map of all 50 states in plate scout" />
-				<Image src={mapSemi} alt="a map of all 50 states in plate scout" />
-				<Image src={profile} alt="a map of all 50 states in plate scout" />
+				<div className='w-full flex flex-col gap-10'>
+					<p className='text-red-100 sm:text-blue-400 md:text-green-400 xs:text-yellow-500'>This is some text</p>
+					<div className='flex items-center w-full justify-between'>
+						<Image src={homeScreen} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
+						<Image src={profile} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
+						<div className=''>
+							<h3>Home Screen</h3>
+							<p>This is the main screen of Plate Scout and where you are going to be able to access all of your trips and even make new ones. This is the screen that you can go to if you need to access your profile, you can also access that on trip screen, this is the most important screen in the app. </p>
+						</div>
+					</div>
+					<div className='flex items-center w-full justify-between'>
+						<Image src={allStates} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
+						<Image src={empty} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
+						<Image src={mapSemi} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
+					</div>
+				</div>
             </section>
 		</div>
 	);
