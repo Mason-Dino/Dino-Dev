@@ -1,5 +1,11 @@
 import { ChevronRight } from "lucide-react";
 
+import allStates from "../../../public/screens/50-states.png"
+import empty from "../../../public/screens/empty.png"
+import homeScreen from "../../../public/screens/home-screen.png"
+import profile from "../../../public/screens/profile.png"
+import mapSemi from "../../../public/screens/semi-full-map.png"
+
 export default function Home() {
 	return (
 		<div>
