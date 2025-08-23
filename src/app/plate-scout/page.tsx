@@ -1,10 +1,13 @@
+import react from 'react'
+import Image from 'next/image';
+
 import { ChevronRight } from "lucide-react";
 
-import allStates from "../../../public/screens/50-states.png"
-import empty from "../../../public/screens/empty.png"
-import homeScreen from "../../../public/screens/home-screen.png"
-import profile from "../../../public/screens/profile.png"
-import mapSemi from "../../../public/screens/semi-full-map.png"
+import allStates from '../../../public/screens/50-states.png';
+import empty from "../../../public/screens/empty.png";
+import homeScreen from "../../../public/screens/home-screen.png";
+import profile from "../../../public/screens/profile.png";
+import mapSemi from "../../../public/screens/semi-full-map.png";
 
 export default function Home() {
 	return (
@@ -33,6 +36,7 @@ export default function Home() {
                 <h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
                     What is Plate Scout?
                 </h1>
+				<Image src={allStates} alt="a map of all 50 states in plate scout" />
             </section>
 		</div>
 	);
