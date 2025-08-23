@@ -42,7 +42,7 @@ export default function Home() {
 						<Image src={profile} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
 					</div>
 					<div className='text-white'>
-						<h3>Home/Profile Screen</h3>
+						<h3 className='text-lg font-bold mb-2'>Home/Profile Screen</h3>
 						<p>These two screens will be the 2nd most used screens. The Home Screen allows you to change trips, make trips, and even delete trips! On the profile screen you will see your points you have within Plate Scout</p>
 					</div>
 					<div className='flex items-center w-full justify-between'>
@@ -51,7 +51,7 @@ export default function Home() {
 						<Image src={mapSemi} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
 					</div>
 					<div className='text-white'>
-						<h3>Trip Screen</h3>
+						<h3 className='text-lg font-bold mb-2'>Trip Screen</h3>
 						<p>This is the most important screen in Plate Scout as this is the screen you will actually add different states on each of your different trips you have!</p>
 					</div>
 				</div>
