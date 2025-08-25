@@ -26,7 +26,7 @@ export default function Home() {
 					</div>
 					<div className='flex flex-row gap-4 justify-center'>
                         <a>
-                            <button className="rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+                            <button className="rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
                                 Download <ChevronRight />
                             </button>
                         </a>
@@ -64,17 +64,17 @@ export default function Home() {
                 </h2>
 				<div className='flex flex-col lg:flex-row gap-4 justify-center'>
 					<a>
-						<button className="w-[300px] rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+						<button className="w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<BookLock className='mr-2'/> Privacy Policy
 						</button>
 					</a>
 					<a>
-						<button className="w-[300px] rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+						<button className="w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<Bug className='mr-2'/> Support
 						</button>
 					</a>
 					<a>
-						<button className="w-[300px] rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+						<button className="w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<Star className='mr-2'/> Request a Feature
 						</button>
 					</a>
