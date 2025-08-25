@@ -58,23 +58,24 @@ export default function Home() {
 				</div>
             </section>
 			<br />
+			<br />
 			<section className="flex flex-col text-center justify-content items-center">
 				<h2 className="text-2xl md:text-2xl font-bold text-white mb-6">
                     Support
                 </h2>
 				<div className='flex flex-col lg:flex-row gap-4 justify-center'>
 					<a>
-						<button className="w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
+						<button className="cursor-pointer w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<BookLock className='mr-2'/> Privacy Policy
 						</button>
 					</a>
-					<a>
-						<button className="w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
+					<a href="https://forms.gle/PWzwDehsrpQAYecq8" target='_blank'>
+						<button className="cursor-pointer w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<Bug className='mr-2'/> Support
 						</button>
 					</a>
-					<a>
-						<button className="w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
+					<a href="https://dinodev.featurebase.app/" target='_blank'>
+						<button className="cursor-pointer w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<Star className='mr-2'/> Request a Feature
 						</button>
 					</a>
