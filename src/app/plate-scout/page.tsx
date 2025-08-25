@@ -33,9 +33,9 @@ export default function Home() {
 				</div>
 			</section>
             <section className="flex flex-col text-center justify-content items-center">
-                <h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
+                <h2 className="text-2xl md:text-2xl font-bold text-white mb-6">
                     What is Plate Scout?
-                </h1>
+                </h2>
 				<div className='w-full flex flex-col gap-10'>
 					<div className='flex items-center w-full justify-around'>
 						<Image src={homeScreen} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[17%]'/>
@@ -56,6 +56,11 @@ export default function Home() {
 					</div>
 				</div>
             </section>
+			<section className="flex flex-col text-center justify-content items-center">
+				<h2 className="text-2xl md:text-2xl font-bold text-white mb-6">
+                    What is Plate Scout?
+                </h2>
+			</section>
 		</div>
 	);
 }
