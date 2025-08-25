@@ -38,17 +38,17 @@ export default function Home() {
                 </h1>
 				<div className='w-full flex flex-col gap-10'>
 					<div className='flex items-center w-full justify-around'>
-						<Image src={homeScreen} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
-						<Image src={profile} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[25%]'/>
+						<Image src={homeScreen} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[17%]'/>
+						<Image src={profile} alt="a map of all 50 states in plate scout" className='rounded-xl size-[40%] md:size-[17%]'/>
 					</div>
 					<div className='text-white'>
 						<h3 className='text-lg font-bold mb-2'>Home/Profile Screen</h3>
 						<p>These two screens will be the 2nd most used screens. The Home Screen allows you to change trips, make trips, and even delete trips! On the profile screen you will see your points you have within Plate Scout</p>
 					</div>
-					<div className='flex items-center w-full justify-between'>
-						<Image src={allStates} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
-						<Image src={empty} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
-						<Image src={mapSemi} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[25%]'/>
+					<div className='flex items-center w-full justify-around'>
+						<Image src={allStates} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[17%]'/>
+						<Image src={empty} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[17%]'/>
+						<Image src={mapSemi} alt="a map of all 50 states in plate scout" className='rounded-xl size-[30%] md:size-[17%]'/>
 					</div>
 					<div className='text-white'>
 						<h3 className='text-lg font-bold mb-2'>Trip Screen</h3>
