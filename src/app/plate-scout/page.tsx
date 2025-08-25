@@ -2,6 +2,7 @@ import react from 'react'
 import Image from 'next/image';
 
 import { ChevronRight } from "lucide-react";
+import { Star, Bug, BookLock } from 'lucide-react';
 
 import allStates from '../../../public/screens/50-states.png';
 import empty from "../../../public/screens/empty.png";
@@ -56,10 +57,28 @@ export default function Home() {
 					</div>
 				</div>
             </section>
+			<br />
 			<section className="flex flex-col text-center justify-content items-center">
 				<h2 className="text-2xl md:text-2xl font-bold text-white mb-6">
-                    What is Plate Scout?
+                    Support
                 </h2>
+				<div className='flex flex-col lg:flex-row gap-4 justify-center'>
+					<a>
+						<button className="w-[300px] rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+							<BookLock className='mr-2'/> Privacy Policy
+						</button>
+					</a>
+					<a>
+						<button className="w-[300px] rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+							<Bug className='mr-2'/> Support
+						</button>
+					</a>
+					<a>
+						<button className="w-[300px] rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
+							<Star className='mr-2'/> Request a Feature
+						</button>
+					</a>
+				</div>
 			</section>
 		</div>
 	);
