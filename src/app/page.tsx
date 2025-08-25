@@ -17,14 +17,16 @@ export default function Home() {
 						</h3>
 					</div>
 					<div className='flex flex-col sm:flex-row gap-4 justify-center'>
-						<button className="rounded-2xl bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-400 hover:to-purple-400 transition-all transform text-white text-xl font-semibold hover:font-bold py-3 px-10 flex items-center justify-center">
-							View My Work <ChevronRight />
-						</button>
+						<a href='#projects'>
+							<button className="rounded-2xl bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-400 hover:to-purple-400 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
+								View My Work <ChevronRight />
+							</button>
+						</a>
 					</div>
 				</div>
 			</section>
 			<section className="flex flex-col text-center justify-content items-center">
-				<h1 className="text-2xl md:text-2xl font-bold text-white mb-6">
+				<h1 id="projects" className="text-2xl md:text-2xl font-bold text-white mb-6">
 					Current & Fun Projects!
 				</h1>
 				<section id="projects" className="flex flex-col gap-4">
