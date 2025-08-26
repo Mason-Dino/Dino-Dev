@@ -16,7 +16,7 @@ export default function Home() {
 							Creating family fun application to spend<br />time together and grow closer together
 						</h3>
 					</div>
-					<div className='flex flex-col sm:flex-row gap-4 justify-center'>
+					<div className='flex flex-row gap-4 justify-center'>
 						<a href='#projects'>
 							<button className="rounded-2xl bg-gradient-to-r from-purple-400 to-blue-400 hover:from-purple-400 hover:to-purple-400 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 								View My Work <ChevronRight />
