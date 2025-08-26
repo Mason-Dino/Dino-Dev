@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ChevronRight, Italic } from "lucide-react";
 import { Star, Bug, BookLock } from 'lucide-react';
 
-export default function Home() {
+export default function PlateScoutPrivacy() {
 	return (
 		<div>
 			<section className="py-20 px-6">

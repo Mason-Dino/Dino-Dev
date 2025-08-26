@@ -10,7 +10,7 @@ import homeScreen from "../../../public/screens/home-screen.png";
 import profile from "../../../public/screens/profile.png";
 import mapSemi from "../../../public/screens/semi-full-map.png";
 
-export default function Home() {
+export default function PlateScout() {
 	return (
 		<div>
 			<section className="py-20 px-6 mb-50">
