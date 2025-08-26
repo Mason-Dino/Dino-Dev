@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import { ChevronRight, Italic } from "lucide-react";
 import { Star, Bug, BookLock } from 'lucide-react';
 
 export default function PlateScoutPrivacy() {
@@ -8,7 +7,7 @@ export default function PlateScoutPrivacy() {
 		<div>
 			<section className="py-20 px-6">
 				<div className="max-w-full m-auto text-center">
-					<div className="">
+					<div>
 						<h1 className="text-4xl md:text-6xl font-bold text-white">
 							Privacy Policy
 						</h1>
@@ -41,7 +40,7 @@ export default function PlateScoutPrivacy() {
                 <h3 className='text-3xl font-bold mb-3'>Account Required</h3>
                 <p className='mb-6'>Plate Scout does not require you to create any sort of account or provide personal information</p>
                 <h3 className='text-3xl font-bold mb-3'>Updates to this Policy</h3>
-                <p className='mb-6'>If we updated this policy you will be notified within the app and the "Last Updated" will be updated with the new updated date.</p>
+                <p className='mb-6'>If we updated this policy you will be notified within the app and the &ldquo;Last Updated&ldquo; will be updated with the new updated date.</p>
                 <h3 className='text-3xl font-bold mb-3'>Contact Us</h3>
                 <p className='mb-6'>If you have any questions about this privacy policy, please submit a ticket at this <a className='underline' href="https://forms.gle/PWzwDehsrpQAYecq8" target='_blank'>page</a></p>
                 <br /> <br />
