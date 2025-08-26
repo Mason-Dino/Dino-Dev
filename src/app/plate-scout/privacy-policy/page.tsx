@@ -19,11 +19,11 @@ export default function PlateScoutPrivacy() {
             <section className='text-white'>
                 <p className='mb-5 italic'>Last Updated: 8/25/25</p>
                 <h3 className='text-3xl font-bold mb-3'>Your Privacy Matters</h3>
-                <p className='mb-6'>Dinosaur Development is committed to protecting your privacy and so you know where your data is going. This policy will explain what information is stored and how we used that stored data.</p>
+                <p className='mb-6'>Dinosaur Development is committed to protecting your privacy and ensuring you know where your data is going. This policy will explain what information is stored and how we used that stored data.</p>
                 <h3 className='text-3xl font-bold mb-3'>What Information We Collect</h3>
                 <p>When you use our app, we are only collecting information you choose to give.</p>
                 <ul className='list-disc mb-6'>
-                    <li className='ml-6'><b>Trip Name</b> - This the name of the trip</li>
+                    <li className='ml-6'><b>Trip Name</b> - The trip identifier you assign to the trip</li>
                     <li className='ml-6'><b>States Visited</b> - Which states you visited</li>
                     <li className='ml-6'><b>Trip Start Date</b> - The date in which your trip starts</li>
                     <li className='ml-6'><b>Trip Icon</b> - The icon you choose to represent if that is a car, bus, or train</li>
