@@ -1,5 +1,5 @@
-import react from 'react'
 import Image from 'next/image';
+import Link from 'next/link'
 
 import { ChevronRight } from "lucide-react";
 import { Star, Bug, BookLock } from 'lucide-react';
@@ -25,11 +25,11 @@ export default function PlateScout() {
 						</h3>
 					</div>
 					<div className='flex flex-row gap-4 justify-center'>
-                        <a>
+                        <Link href="/">
                             <button className="rounded-2xl bg-gradient-to-r from-blue-400 to-green-400 hover:from-blue-400 hover:to-blue-400 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
                                 Download <ChevronRight />
                             </button>
-                        </a>
+                        </Link>
 					</div>
 				</div>
 			</section>
@@ -64,21 +64,21 @@ export default function PlateScout() {
                     Support
                 </h2>
 				<div className='flex flex-col lg:flex-row gap-4 justify-center'>
-					<a href='/plate-scout/privacy-policy'>
+					<Link href='/plate-scout/privacy-policy'>
 						<button className="cursor-pointer w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<BookLock className='mr-2'/> Privacy Policy
 						</button>
-					</a>
-					<a href="https://forms.gle/PWzwDehsrpQAYecq8" target='_blank'>
+					</Link>
+					<Link href="https://forms.gle/PWzwDehsrpQAYecq8" target='_blank'>
 						<button className="cursor-pointer w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<Bug className='mr-2'/> Support
 						</button>
-					</a>
-					<a href="https://dinodev.featurebase.app/" target='_blank'>
+					</Link>
+					<Link href="https://dinodev.featurebase.app/" target='_blank'>
 						<button className="cursor-pointer w-[300px] rounded-2xl bg-white/3 border-white/10 hover:bg-white/10 border-3 transition-all transform text-white text-xl font-semibold py-3 px-10 flex items-center justify-center">
 							<Star className='mr-2'/> Request a Feature
 						</button>
-					</a>
+					</Link>
 				</div>
 			</section>
 		</div>

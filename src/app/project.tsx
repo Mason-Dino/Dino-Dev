@@ -1,4 +1,7 @@
 import { Caravan, FolderGit, CodeXml, Download, Globe } from "lucide-react";
+import { Url } from "next/dist/shared/lib/router/router";
+
+import Link from 'next/link'
 
 interface ProjectProps {
     Name: string;
@@ -10,9 +13,9 @@ interface ProjectProps {
     download: boolean;
     website: boolean;
 
-    codeLink?: string;
-    downloadLink?: string;
-    websiteLink?: string;
+    codeLink?: Url;
+    downloadLink?: Url;
+    websiteLink?: Url;
 }
 
 export default function Project({Name, Description, Frameworks, Icon, code, download, codeLink, downloadLink, website, websiteLink}: ProjectProps) {
@@ -53,23 +56,23 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
             {IconContent}
             <h1 className="flex flex-row items-center w-full text-xl font-bold text-white text-left mb-5">
                 {website ? 
-                <a href={websiteLink} className="cursor-pointer">
+                <Link href={websiteLink} className="cursor-pointer">
                     {Name}
-                </a> : Name}
+                </Link> : Name}
                 <span className="ml-auto flex flex-row gap-2 stoke-1.25">
                     {website &&
-                    <a href={websiteLink} target="_blank">
+                    <Link href={websiteLink} target="_blank">
                         <Globe className="h-5 w-5 cursor-pointer"/>
-                    </a>
+                    </Link>
                     }
                     {code && 
-                    <a href={codeLink} target="_blank">
+                    <Link href={codeLink} target="_blank">
                         <CodeXml className="h-5 w-5 cursor-pointer"/>
-                    </a>}
+                    </Link>}
                     {download && 
-                    <a href={downloadLink} target="_blank">
+                    <Link href={downloadLink} target="_blank">
                         <Download className="h-5 w-5 cursor-pointer"/>
-                    </a>}
+                    </Link>}
                 </span>
             </h1>
             <p className="text-white text-left mb-5">

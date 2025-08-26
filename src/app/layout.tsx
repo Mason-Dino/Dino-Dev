@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Image from 'next/image';
+import Link from 'next/link'
 
 import dinodev from "../../public/dinodev.svg"
 
@@ -25,12 +26,12 @@ export default function RootLayout({
 			<body className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
 				<header className="bg-black/20 backdrop-blur-sm border-b border-white/10">
 					<div className="max-w-full mx-auto px-6 py-4 flex flex-row items-center gap-3">
-						<a href="/">
+						<Link href="/">
 							<Image src={dinodev} alt="catroon dinosaur" className="size-10"/>
-						</a>
-						<a href="/" className="text-2xl font-bold text-white">
+						</Link>
+						<Link href="/" className="text-2xl font-bold text-white">
 							&lt;DinoDev/&gt;
-						</a>
+						</Link>
 					</div>
 				</header>
 				<div className="px-10">
