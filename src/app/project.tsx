@@ -13,13 +13,13 @@ interface ProjectProps {
     download: boolean;
     website: boolean;
 
-    codeLink?: Url;
-    downloadLink?: Url;
-    websiteLink?: Url;
+    codeLink?: string;
+    downloadLink?: string;
+    websiteLink?: string;
 }
 
 export default function Project({Name, Description, Frameworks, Icon, code, download, codeLink, downloadLink, website, websiteLink}: ProjectProps) {
-    var DetailFramework: string[][] = [];
+    const DetailFramework: string[][] = [];
 
     let IconContent;
 
@@ -51,28 +51,52 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
         IconContent = <FolderGit className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-violet-500 to-green-500 rounded-lg"/>
     }
 
+    const isExternalUrl = (url: string) => {
+        return url.startsWith('http://') || url.startsWith('https://');
+    };
+
     return (
         <div className="h-auto lg:w-150 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
             {IconContent}
             <h1 className="flex flex-row items-center w-full text-xl font-bold text-white text-left mb-5">
-                {website ? 
+                {website && websiteLink ? 
                 <Link href={websiteLink} className="cursor-pointer">
                     {Name}
                 </Link> : Name}
                 <span className="ml-auto flex flex-row gap-2 stoke-1.25">
-                    {website &&
-                    <Link href={websiteLink} target="_blank">
-                        <Globe className="h-5 w-5 cursor-pointer"/>
-                    </Link>
-                    }
-                    {code && 
-                    <Link href={codeLink} target="_blank">
-                        <CodeXml className="h-5 w-5 cursor-pointer"/>
-                    </Link>}
-                    {download && 
-                    <Link href={downloadLink} target="_blank">
-                        <Download className="h-5 w-5 cursor-pointer"/>
-                    </Link>}
+                    {website && websiteLink && (
+                        isExternalUrl(websiteLink) ? (
+                            <a href={websiteLink} target="_blank">
+                                <Globe className="h-5 w-5 cursor-pointer"/>
+                            </a>
+                        ) : (
+                            <Link href={websiteLink} target="_blank">
+                                <Globe className="h-5 w-5 cursor-pointer"/>
+                            </Link>
+                        )
+                    )}
+                    { code && codeLink && (
+                        isExternalUrl(codeLink) ? (
+                            <a href={websiteLink} target="_blank">
+                                <CodeXml className="h-5 w-5 cursor-pointer"/>
+                            </a>
+                        ) : (
+                            <Link href={codeLink} target="_blank">
+                                <CodeXml className="h-5 w-5 cursor-pointer"/>
+                            </Link>
+                        )
+                    )}
+                    { download && downloadLink && (
+                        isExternalUrl(downloadLink) ? (
+                            <a>
+                                <Download className="h-5 w-5 cursor-pointer"/>
+                            </a>
+                        ) : (
+                            <Link href={downloadLink} target="_blank">
+                                <Download className="h-5 w-5 cursor-pointer"/>
+                            </Link>
+                        )
+                    )}
                 </span>
             </h1>
             <p className="text-white text-left mb-5">
