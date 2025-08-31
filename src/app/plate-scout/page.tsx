@@ -21,7 +21,7 @@ export default function PlateScout() {
 							<span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"> Scout</span>
 						</h1>
 						<h3 className="text-xl md:text-2xl font-semibold text-white lg:px-20 md:px-none sm:px-none">
-							On you next road trip?<br /> Download Plate Scout to have a little family fun or some competition! 
+							Are you on next road trip?<br /> Download Plate Scout to have a little family fun or some competition! 
 						</h3>
 					</div>
 					<div className='flex flex-row gap-4 justify-center'>
