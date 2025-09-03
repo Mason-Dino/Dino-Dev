@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+<br/>
+<div align="center">
+<a href="https://github.com/Mason-Dino/Dino-Dev">
+<img src="https://raw.githubusercontent.com/Mason-Dino/Dino-Dev/e110c1520601250b9480ebdc91790cdb45522099/public/dinodev-background.svg" alt="Logo" width="80" height="80">
+</a>
+<h3 align="center">ReadME Generator</h3>
+<p align="center">
+My personal portfolio to host my projects and cool interesting stuff!
+<br/>
+<br/>
+<br/>
+<a href="https://github.com/Mason-Dino/Dino-Dev/issues/new?labels=bug&template=bug-report---.md">Report Bug</a> •
+<a href="https://github.com/Mason-Dino/Dino-Dev/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+</p>
+</div>
+
+## About The Project
+
+![](https://github.com/Mason-Dino/Dino-Dev/blob/main/public/product.png?raw=true)
+
+I wanted to have a website where I could host different website I make and different apps I make. It is also nice to have all of my projects in one central location.
+
+## Built With
+
+This is everything I build the website with!
+
+*   [Next.js](https://nextjs.org/)
+*   [React](https://react.dev/)
+*   [Tailwindcss](https://tailwindcss.com/)
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You will need to make sure that you have the latests npm version.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   npm
+    
+        npm install npm@latest -g
+        
+    
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+_Below is how you can setup of the website once you have a local version coppied._
 
-To learn more about Next.js, take a look at the following resources:
+1.  Clone the repo
+    
+        git clone https://github.com/Mason-Dino/Dino-Dev.git
+        
+    
+2.  Install NPM packages
+    
+        npm install
+        
+    
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Roadmap
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See [MIT License](https://opensource.org/licenses/MIT) for more information.
+
+## Contact
+
+Your Name - [@dinosaur\_\_dev](https://www.instagram.com/dinosaur__dev/) - [mason.n.dinosaur@gmail.com](mailto:mason.n.dinosaur@gmail.com)
+
+Project Link: [https://github.com/Mason-Dino/Dino-Dev/](https://github.com/Mason-Dino/Dino-Dev/)
