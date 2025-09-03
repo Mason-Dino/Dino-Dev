@@ -56,11 +56,6 @@ _Below is how you can setup of the website once you have a local version coppied
     
         npm install
         
-    
-
-## Usage
-
-## Roadmap
 
 ## Contributing
 
