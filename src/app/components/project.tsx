@@ -65,6 +65,10 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
         IconContent = <User className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-blue-500 to-slate-500 rounded-lg" />
     }
 
+    if (Icon === "Camera") {
+        IconContent = <Camera className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-blue-500 to-orange-500 rounded-lg" />
+    }
+
     const isExternalUrl = (url: string) => {
         return url.startsWith('http://') || url.startsWith('https://');
     };

@@ -67,6 +67,15 @@ export default function PlateScout() {
                 />
                 <br />
                 <Project 
+                    Name="Production Assistant"
+                    Description={"Jan 2022 - Present\nManaged project digitizing tapes, documented concerts and events within the school district, edited photos and video content to be published on school websites. Recorded 100+ concerts for different Band, Orchestra, or Choir concerts within the Sioux Falls School District!"}
+                    Icon="Camera"
+                    code={false}
+                    download={false}
+                    website={false}
+                />
+                <br />
+                <Project 
                     Name="Camp Cyber Student Leader Team Coordinator"
                     Description={"Nov 2024 - June 2025\nAided the development of the first-ever Camp Cyber from initial concept to full execution as a member of the core planning committee. Coordinate a team of 12 camp counselors, ensuring effective communication, task delegation, and overall efficiency throughout the camp. Act as the central point of contact between leadership and counselor teams, problem-solving in real time to support a smooth camper experience."}
                     Icon="Caravan-DSU"
