@@ -1,6 +1,6 @@
 import {ChevronRight} from 'lucide-react'; 
 
-import Project from './project';
+import Project from './components/project';
 
 export default function Home() {
 	return (
