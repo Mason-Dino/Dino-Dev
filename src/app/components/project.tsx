@@ -1,4 +1,4 @@
-import { Caravan, FolderGit, CodeXml, Download, Globe, BookA } from "lucide-react";
+import { Caravan, FolderGit, CodeXml, Download, Globe, BookA, User,  Camera} from "lucide-react";
 import { Url } from "next/dist/shared/lib/router/router";
 
 import Link from 'next/link'
