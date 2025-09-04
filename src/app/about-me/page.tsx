@@ -20,8 +20,8 @@ export default function PlateScout() {
                         <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent"> Mason</span></h2>
                     <br />
                     <p className='text-white'>
-                        I'm a computer science major from <Link href="https://dsu.edu/" target='_blank' className='underline'>Dakota State University</Link>,
-                        as of now I'm in my 2nd year or sophomore year at DSU!
+                        I&apos;m a computer science major from <Link href="https://dsu.edu/" target='_blank' className='underline'>Dakota State University</Link>,
+                        as of now I&apos;m in my 2nd year or sophomore year at DSU!
                     </p>
                     <br />
                     <p className='text-white'>
