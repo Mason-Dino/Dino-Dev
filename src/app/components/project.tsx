@@ -49,6 +49,10 @@ export default function Project({Name, Description, Frameworks, Icon, code, down
         IconContent = <Caravan className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg" />
     }
 
+    if (Icon === "Caravan-DSU") {
+        IconContent = <Caravan className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-blue-500 to-slate-500 rounded-lg" />
+    }
+
     if (Icon === "Folder-Git") {
         IconContent = <FolderGit className="text-white w-9 h-9 p-1 mb-2 stroke-1.25 bg-gradient-to-br from-violet-500 to-green-500 rounded-lg"/>
     }
