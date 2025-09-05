@@ -21,11 +21,11 @@ export default function PlateScout() {
                     <br />
                     <p className='text-white'>
                         I&apos;m a computer science major from <Link href="https://dsu.edu/" target='_blank' className='underline'>Dakota State University</Link>,
-                        as of now I&apos;m in my 2nd year or sophomore year at DSU!
+                        as of now I&apos;m in my 2nd year or sophomore at DSU!
                     </p>
                     <br />
                     <p className='text-white'>
-                        I Love to work on different projects from a command line tool that makes my life easier to developing ios apps! I also have a passion for teaching people how to program with micro:bits to python.
+                        I love to work on different projects from a command line tool that makes my life easier to developing ios apps! I also have a passion for teaching people how to program with micro:bits to python.
                     </p>
                     <br />
                     <div id="icons" className='flex flex-row justify-center gap-2 text-white'>
