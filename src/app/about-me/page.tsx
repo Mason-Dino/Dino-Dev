@@ -13,7 +13,7 @@ export default function PlateScout() {
             <br />
             <section className='flex flex-col md:flex-row gap-3'>
                 <div className='flex-1'>
-                    <Image src={profile} alt="a map of all 50 states in plate scout" className='rounded-xl w-70 mx-auto'/>
+                    <Image src={profile} alt="a map of myself, a white male, mason" className='rounded-xl w-70 mx-auto'/>
                 </div>
                 <div className='flex-1 text-center'>
                     <h2 className='font-semibold text-2xl text-white'>Hi, my name is 
